@@ -1,0 +1,12 @@
+import cv2
+import os
+import pickle
+import csv
+import time
+import numpy as np
+
+from sklearn.neighbors import KNeighborsClassifier
+from datetime import datetime
+
+video = cv2.VideoCapture(0)
+facedata = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
